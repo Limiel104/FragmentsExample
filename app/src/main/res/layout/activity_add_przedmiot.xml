@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    tools:context=".AddPrzedmiotActivity">
+
+    <EditText
+        android:id="@+id/addNazwa"
+        android:hint="Nazwa przedmiotu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/addData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addNazwa"
+        android:layout_marginTop="10dp"
+        android:hint="Data    dd-MM-yyyy HH:mm" />
+
+    <EditText
+        android:id="@+id/addSala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Sala"
+        android:layout_below="@+id/addData"
+        android:inputType="number"/>
+
+    <Spinner
+        android:id="@+id/addTyp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addSala"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/title" />
+
+    <EditText
+        android:id="@+id/addRok"
+        android:layout_width="match_parent"
+        android:hint="Rok"
+        android:layout_below="@+id/addTyp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/addTemat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Temat Zajęć"
+        android:layout_below="@+id/addRok"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:text="DODAJ"
+        android:layout_below="@+id/addTemat"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/blue"/>
+
+</RelativeLayout>

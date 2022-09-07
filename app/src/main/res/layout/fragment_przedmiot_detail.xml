@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrzedmiotDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNAME"
+            android:textSize="20sp"
+            android:text="Nazwa"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDATA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="data"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtSALA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sala"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtTYP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="typ"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/txtROK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rok"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtTEMAT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tematy"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnEditPrzedmiot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edytuj przedmiot"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue" />
+        <Button
+            android:id="@+id/btnDeletePrzedmiot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuń przedmiot"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lista Studentów"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
